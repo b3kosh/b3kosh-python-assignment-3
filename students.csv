@@ -1,0 +1,11 @@
+id,age,gender,country,sleep_hours,gpa,mental_stress_level
+000001,22,Female,Germany,5,2.8,9
+000002,18,Female,USA,8,3.4,4
+000003,19,Female,Canada,4,2.5,10
+000004,21,Male,Australia,7,3.9,3
+000005,20,Female,Kazakhstan,5,2.9,8
+000006,22,Male,France,9,4.0,2
+000007,23,Male,Italy,5.5,2.7,7
+000008,19,Male,Japan,6.5,3.6,5
+000009,20,Female,Brazil,4.5,2.6,9
+000010,21,Male,UK,8.5,3.8,3
