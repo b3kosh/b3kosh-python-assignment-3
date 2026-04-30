@@ -57,11 +57,14 @@ class DataAnalyser:
         return self.result
 
     def run_filters(self):
-        try:
-            short = list(filter(lambda s: float(s['sleep_hours']) < 6, self.students))
-            print(f"Students sleeping < 6 hours: {len(short)}")
-        except:
-            pass
+        low_sleep = list(filter(lambda s: float(s['sleep_hours']) < 6, self.students))
+        print(f"Count of filtered students (sleep < 6): {len(low_sleep)}")
+        
+        gpa_values = list(map(lambda s: float(s['gpa']), self.students))
+        print(f"First 5 GPA values: {gpa_values[:5]}")
+
+        stressed = list(filter(lambda s: float(s['mental_stress_level']) > 7, self.students))
+        print(f"Count of filtered students (stress > 7): {len(stressed)}")
 
 class ResultSaver:
     def __init__(self, report_data):
